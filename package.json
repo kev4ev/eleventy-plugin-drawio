@@ -4,7 +4,7 @@
   "description": "Embed local .drawio diagrams in your eleventy site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "inspect": "npx --node-options=--inspect-brk eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/kev4ev/eleventy-plugin-drawio/issues"
   },
-  "homepage": "https://github.com/kev4ev/eleventy-plugin-drawio#readme"
+  "homepage": "https://github.com/kev4ev/eleventy-plugin-drawio#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
 }
