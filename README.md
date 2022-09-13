@@ -23,7 +23,7 @@ Now you can use the `drawio` shortcode in your template files as such:
 <iframe src="{% drawio <pathToDrawioFile> [, enableEdit]  %}" />
 ```
 
-The shortcode **requires** `<pathToDrawioFile>`. This is a relative file path which: 
+The shortcode **requires** the argument `<pathToDrawioFile>`. This is a relative file path which: 
 - must include the **.drawio** file suffix, and
 - is relative to your _project root_ (where your `.eleventy.js` file lives)
 
