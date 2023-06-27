@@ -16,13 +16,16 @@
     "drawio",
     "diagrams.net"
   ],
-  "author": "",
+  "author": "kev4ev",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kev4ev/eleventy-plugin-drawio/issues"
   },
-  "homepage": "https://github.com/kev4ev/eleventy-plugin-drawio#readme",
+  "homepage": "https://github.com/kev4ev/eleventy-plugin-drawio",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "peerDependencies": {
+    "@11ty/eleventy": "^1.0"
   }
 }
