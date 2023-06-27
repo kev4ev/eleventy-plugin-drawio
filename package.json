@@ -1,8 +1,12 @@
 {
   "name": "eleventy-plugin-drawio",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Embed local .drawio diagrams in your eleventy site",
-  "main": "index.js",
+  "exports": {
+    ".": "./plugin.js",
+    "./api": "./lib/api.js"
+  },
+  "files": [ "plugin.js", "lib", "README.md" ],
   "scripts": {
     "inspect": "npm exec --node-options='--inspect-brk' -- eleventy --serve"
   },
