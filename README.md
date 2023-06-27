@@ -10,9 +10,9 @@ npm i --save eleventy-plugin-drawio
 
 ## Usage
 
-This package is built primarily as a plugin to the eleventy site generator, but it also exposes a standalone API that you can call directly in your scripts.
+This package is built primarily as a [plugin](#plugin) to the eleventy site generator, but it also exposes a [standalone API](#api) that you can call directly in your scripts.
 
-### `eleventy` Plugin
+### `eleventy` Plugin <span id="plugin"></span>
 
 ```js
 const drawio = require('eleventy-plugin-drawio');
@@ -45,4 +45,16 @@ Arg | Type | Default | Description
 `enableEdit` | boolean | `false` | when true, passes path param `'edit=_blank&'` which allows viewers to edit a new copy of your diagram
 `page` | integer | `undefined` | when provided, passes path param `page=<page>` which tells drawio to automatically render the diagram at the given page
 
-### Programmatic API
+### Programmatic API <span id="api"></span>
+You can call the internal package API in your scripts directly by using a subpath require:
+
+```js
+const drawio = require('eleventy-plugin-drawio/api');
+// ...
+```
+
+Currently the API exposes a single function. 
+
+### `generateAddress(relPath, edit=false, page)`
+Call this function to generate a URL from your draw.io diagram that can be used as an `iframe src` or as a direct link.
+
